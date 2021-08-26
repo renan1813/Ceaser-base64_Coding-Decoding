@@ -1,0 +1,38 @@
+@media (max-width: 1600px){
+    .nav01{
+        display: none;
+    }
+
+    header>label{
+        display: block;
+    }
+
+    #menu:checked~.nav01{
+        display: flex;
+        position: absolute;
+        flex-flow: column wrap;
+        right: 0;
+        top: 70px;
+        width: 150px;
+    }
+
+    main{
+        flex-flow: column nowrap;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    #texto{
+        margin-bottom: 25px;
+    }
+
+    .section01{
+        flex-flow: column;
+    }
+
+    .chaves{
+        width: 100%;
+    }
+}
