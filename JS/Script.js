@@ -167,10 +167,14 @@ document.getElementById("caesarDecoding").addEventListener("click", () => {
 
 document.getElementById('baseCoding').addEventListener("click", () =>
 {
-  
+  let entrada = document.getElementById('texto').value
+  let resultado = btoa(entrada)
+  textoCodificado.value = resultado
 })
 
 document.getElementById('baseDecoding').addEventListener("click", () =>
 {
-
+  let entrada = document.getElementById('saida').value
+  let resultado = atob(entrada)
+  textoDecodificado.value = resultado
 })
