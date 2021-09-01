@@ -178,3 +178,4 @@ document.getElementById('baseDecoding').addEventListener("click", () =>
   let resultado = atob(entrada)
   textoDecodificado.value = resultado
 })
+// um comentario engraçado, sua risada esta programada para daqui a 142 minutos
