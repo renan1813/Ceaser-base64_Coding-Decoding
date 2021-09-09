@@ -178,4 +178,46 @@ document.getElementById('baseDecoding').addEventListener("click", () =>
   let resultado = atob(entrada)
   textoDecodificado.value = resultado
 })
+
+document.getElementById("caesarCodingTeste").addEventListener("click", () =>
+{
+  let entrada = document.getElementById("texto").value;
+  let chave = document.getElementById("chave").value;
+  chave = parseInt(chave);
+  let arrayEntrada = entrada.split("");
+  let aux1 = [];
+  let aux2 = 0;
+  let aux3 = "";
+  if (chave == 1813)
+  {
+    alert(`MEU PIPI NO SEU POPO`);
+  }
+  else
+  {
+    for (let i = 0; i < arrayEntrada.length; i++)
+    {
+      aux2 = arrayEntrada[i].charCodeAt();
+      if (aux2 >= 65 && aux2 <= 90)
+      {
+        aux1.push(codificarUpperCase(aux2, chave));
+      }
+      else if (aux2 >= 97 && aux2 <= 122)
+      {
+        aux1.push(codificarLowerCase(aux2, chave));
+      }
+      else
+      {
+        aux1.push(aux2);
+      }
+    }
+
+    for (let i = 0; i < aux1.length; i++)
+    {
+      aux1[i] = String.fromCharCode(aux1[i]);
+    }
+
+    aux3 = aux1.join("");
+    textoCodificado.value = aux3;
+  }
+});
 // um comentario engraçado, sua risada esta programada para daqui a 142 minutos
