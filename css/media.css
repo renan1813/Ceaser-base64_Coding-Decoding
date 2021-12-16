@@ -1,5 +1,5 @@
-@media (max-width: 1600px){
-    .nav01{
+@media (max-width: 1600px) {
+    /* .nav01{
         display: none;
     }
 
@@ -14,25 +14,34 @@
         right: 0;
         top: 70px;
         width: 150px;
-    }
+    } */
 
-    main{
+    main {
         flex-flow: column nowrap;
     }
 
-    .texto{
+    .texto {
         width: 100%;
     }
 
-    #texto{
+    #texto {
         margin-bottom: 25px;
     }
 
-    .section01{
-        flex-flow: column;
+    .section01 {
+        flex-flow: column wrap;
+        grid-column: 2/7;
     }
 
-    .chaves{
+    .buttons{
+        width: 100%;
+    }
+
+    .upButton{
+        margin-bottom: 15px;
+    }
+
+    .chaves {
         width: 100%;
     }
 }

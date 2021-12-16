@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
 
     <title>Caesar & base64</title>
 </head>
+
 <body>
-    <header>
+    <!-- <header>
         <div class="logo">"Logo"</div>
 
         <input type="checkbox" name="" id="menu">
@@ -21,7 +23,7 @@
             <div>Caesar Cipher</div>
             <div>Base64</div>
         </nav>
-    </header>
+    </header> -->
 
     <main>
         <textarea class="texto" id="texto"></textarea>
@@ -31,12 +33,16 @@
 
     <section class="section01">
         <div class="buttons">
-            <button class="button coding" id="caesarCoding">Coding Caesar</button>
-            <button class="button coding" id="baseCoding">Coding Base64</button>
-            <button class="button coding" id="caesarCodingTeste">Coding Caesar Teste</button>
-            
-            <button class="button decoding" id="caesarDecoding">Decoding Caesar</button>
-            <button class="button decoding" id="baseDecoding">Decoding Base64</button>
+            <div class="buttonsCode">
+                <button class="button upButton" id="caesarCoding">Coding Caesar</button>
+                <button class="button" id="baseCoding">Coding Base64</button>
+                <!-- <button class="button coding" id="caesarCodingTeste">Coding Caesar Teste</button> -->
+            </div>
+
+            <div class="buttonsDecode">
+                <button class="button upButton" id="caesarDecoding">Decoding Caesar</button>
+                <button class="button" id="baseDecoding">Decoding Base64</button>
+            </div>
         </div>
         <div class="chaves">
             <input class="chave" id="chave" type="number">
@@ -49,4 +55,5 @@
     </footer>
     <!--um comentario engraçado, sua risada esta programada para daqui a 1132 minutos-->
 </body>
+
 </html>

@@ -1,5 +1,5 @@
-*;
-*::before;
+*,
+*::before,
 *::after{
     padding: 0;
     margin: 0;
@@ -19,7 +19,7 @@ body{
     grid-template-rows: repeat(5, auto) 70px; 
 }
 
-#menu{
+/* #menu{
     display: none;
 }
 
@@ -50,7 +50,7 @@ header{
     justify-content: space-around;
     align-items: center;
     width: 30%;
-}
+} */
 
 main{
     grid-column: 2/6;
@@ -85,10 +85,6 @@ main{
     width: 50%;
 }
 
-.button{
-
-}
-
 .chaves{
     display: flex;
     flex-flow: row wrap;
@@ -111,4 +107,4 @@ footer{
     width: 100%;
     height: 100%;
 }
-/* um comentario engraçado, sua risada esta programada para daqui a 2345 minutos */
+/* outro comentario engraçado, sua risada esta programada para daqui a 2345 minutos */
